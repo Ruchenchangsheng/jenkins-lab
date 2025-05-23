@@ -9,13 +9,13 @@ pipeline {
 
         stage('Install') {
             steps {
-                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pip install -r requirements.txt"
+                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe -m pip install -r requirements.txt"
             }
         }
 
         stage('Test') {
             steps {
-                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe -m pytest"
+                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe -m pytest"
             }
         }
     }

@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Install') {
             steps {
-                bat 'C:\Users\chen\AppData\Local\Microsoft\WindowsApps\python.exe pip install -r requirements.txt'
+                bat 'C:/Users/chen/AppData/Local/Microsoft/WindowsApps/python.exe pip install -r requirements.txt'
             }
         }
         stage('Test') {

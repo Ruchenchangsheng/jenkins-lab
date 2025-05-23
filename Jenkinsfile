@@ -12,7 +12,7 @@ pipeline {
                 bat 'dir'
                 bat 'where python'
                 bat 'where pip'
-                bat 'pip install -r requirements.txt'
+                bat '"C:\\Users\\YourName\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Test') {

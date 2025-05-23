@@ -6,16 +6,14 @@ pipeline {
                 git url: 'https://github.com/Ruchenchangsheng/jenkins-lab.git', branch: 'main'
             }
         }
-
         stage('Install') {
             steps {
-                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe -m pip install -r requirements.txt"
+                bat 'pip install -r requirements.txt'
             }
         }
-
         stage('Test') {
             steps {
-                bat "C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe -m pytest"
+                bat 'pytest'
             }
         }
     }

@@ -6,6 +6,13 @@ pipeline {
                 git url: 'https://github.com/Ruchenchangsheng/jenkins-lab.git', branch: 'main'
             }
         }
+        stage('Debug') {
+            steps {
+                bat 'where python'
+                bat 'python --version'
+                bat 'pip --version'
+            }
+        }
         stage('Install') {
             steps {
                 bat 'pip install -r requirements.txt'

@@ -10,11 +10,13 @@ pipeline {
             steps {
                 bat '''
                         echo ==== 当前 Python 版本 ====
-                        python --version
+                        C:\\Users\\chen\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe --version
+
                         echo ==== 当前 pip 版本 ====
-                        pip --version
+                        C:\\Users\\chen\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\Scripts\\pip3.exe --version
+
                         echo ==== 安装依赖 ====
-                        pip install -r requirements.txt
+                        C:\\Users\\chen\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\Scripts\\pip3.exe install -r requirements.txt
                         '''
 //                 bat 'pip install -r requirements.txt'
             }

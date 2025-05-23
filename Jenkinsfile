@@ -8,7 +8,15 @@ pipeline {
         }
         stage('Install') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat '''
+                        echo ==== 当前 Python 版本 ====
+                        python --version
+                        echo ==== 当前 pip 版本 ====
+                        pip --version
+                        echo ==== 安装依赖 ====
+                        pip install -r requirements.txt
+                        '''
+//                 bat 'pip install -r requirements.txt'
             }
         }
         stage('Test') {

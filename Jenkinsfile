@@ -12,12 +12,12 @@ pipeline {
                 bat 'dir'
                 bat 'where python'
                 bat 'where pip'
-                bat '"C:\\Users\\YourName\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
+                bat '"C:\\Users\\chen\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install -r requirements.txt'
             }
         }
         stage('Test') {
             steps {
-                bat '"C:\\Users\\YourName\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pytest'
+                bat '"C:\\Users\\chen\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pytest'
             }
         }
     }
